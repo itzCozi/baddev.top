@@ -8,8 +8,9 @@
   let { className = "", href, text }: Props = $props();
 </script>
 
-<li class={`list-item ${className}`}>
+<li class={`flex flex-row gap-2 ${className}`}>
   <a
     {href}
+    class="w-full"
     target="_blank">{text}</a>
 </li>

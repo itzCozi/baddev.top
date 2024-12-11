@@ -23,12 +23,8 @@ body {
 }
 
 ul li::before {
-  content: "* ";
+  content: "*";
   color: #bbbbbb; /* Dimmed */
-}
-li a {
-  display: inline-block;
-  width: 94.8%;
 }
 
 a {
