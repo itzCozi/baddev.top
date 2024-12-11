@@ -1,9 +1,9 @@
 <script lang="ts">
-  import BigButton from "$lib/components/buttons/Button.svelte";
-  import Button from "$lib/components/buttons/Button.svelte";
-  import PageLayout from "$lib/components/layout/PageLayout.svelte";
-  import Paragraph from "$lib/components/type/Paragraph.svelte";
-  import Divider from "$lib/components/type/Divider.svelte";
+  import BigButton from "$lib/buttons/Button.svelte";
+  import Button from "$lib/buttons/Button.svelte";
+  import PageLayout from "$lib/layout/PageLayout.svelte";
+  import Paragraph from "$lib/type/Paragraph.svelte";
+  import Divider from "$lib/type/Divider.svelte";
 </script>
 
 <PageLayout>

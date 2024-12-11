@@ -1,9 +1,9 @@
 <script lang="ts">
-  import Divider from "$lib/components/type/Divider.svelte";
-  import ListItem from "$lib/components/layout/ListItem.svelte";
-  import Paragraph from "$lib/components/type/Paragraph.svelte";
-  import PageLayout from "$lib/components/layout/PageLayout.svelte";
-  import Button from "$lib/components/buttons/Button.svelte";
+  import Divider from "$lib/type/Divider.svelte";
+  import ListItem from "$lib/layout/ListItem.svelte";
+  import Paragraph from "$lib/type/Paragraph.svelte";
+  import PageLayout from "$lib/layout/PageLayout.svelte";
+  import Button from "$lib/buttons/Button.svelte";
 </script>
 
 <PageLayout>

@@ -7,7 +7,7 @@
 </script>
 
 <div class="flex items-center justify-center p-4">
-  <div class="mx-auto flex flex-col gap-2 max-w-xs border-mono-divider border min-h-screen p-6">
+  <div class="mx-auto flex flex-col gap-2 max-w-xs border-mono-divider border min-h-screen p-4">
     {@render children?.()}
   </div>
 </div>
