@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root ::-webkit-scrollbar {
+  width: 8px;
+  background-color: transparent;
+  border-left: #202020 solid 0.5px;
+}
+:root ::-webkit-scrollbar-thumb {
+  background-color: #252525;
+  cursor: pointer;
+}
+
+:root {
+  --background-color: #121212;
+}
+
+html,
+body {
+  background-color: var(--background-color);
+  color: #d0d0d0;
+  font-family: "Inconsolata";
+  margin: 0;
+  padding: 0;
+  caret-color: #e0e0e0;
+}
+
+ul li::before {
+  content: "* ";
+  color: #a3a3a3; /* Dimmed */
+}
+
+a {
+  color: #4493f8;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}

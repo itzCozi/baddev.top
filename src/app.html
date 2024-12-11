@@ -1,12 +1,101 @@
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" href="%sveltekit.assets%/favicon.png" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		%sveltekit.head%
-	</head>
-	<body data-sveltekit-preload-data="hover">
-		<div style="display: contents">%sveltekit.body%</div>
-	</body>
+  <head>
+    <title id="page-title">365 Radio</title>
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com" />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap"
+      rel="stylesheet" />
+    <meta charset="utf-8" />
+    <link
+      rel="icon"
+      href="/favicon.png" />
+    <meta
+      name="theme-color"
+      content="#202020" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <meta
+      name="description"
+      content="Cultured music and live performances 24 hours a day 365 days a year." />
+    <meta
+      name="keywords"
+      content="Techno, 365 Radio, DJ, Music, House, Radio, Live performances" />
+    <meta
+      name="author"
+      content="BadDeveloper" />
+    <meta
+      name="copyright"
+      content="MIT License" />
+    <meta
+      name="language"
+      content="en" />
+    <link
+      rel="canonical"
+      href="https://365.ilysm.nl" />
+    <meta
+      property="og:title"
+      content="365 Radio - Cultured Music" />
+    <meta
+      property="og:description"
+      content="Cultured music and live performances 24 hours a day 365 days a year." />
+    <meta
+      property="og:image"
+      content="/icon.png" />
+    <meta
+      property="og:url"
+      content="https://365.ilysm.nl" />
+    <meta
+      property="og:type"
+      content="website" />
+    <meta
+      name="twitter:card"
+      content="summary" />
+    <meta
+      name="twitter:title"
+      content="365 Radio - Cultured Music" />
+    <meta
+      name="twitter:description"
+      content="Cultured music and live performances 24 hours a day 365 days a year." />
+    <meta
+      name="twitter:image"
+      content="/icon.png" />
+    <meta
+      name="twitter:url"
+      content="https://365.ilysm.nl" />
+    <meta
+      name="robots"
+      content="index, follow" />
+    <script>
+      if ("serviceWorker" in navigator) {
+        navigator.serviceWorker.register("/service-worker.js");
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "markd.it",
+        "url": "https://365.ilysm.nl",
+        "description": "Cultured music and live performances 24 hours a day 365 days a year.",
+        "applicationCategory": "Text Editor",
+        "operatingSystem": "Web Browser"
+      }
+    </script>
+    %sveltekit.head%
+  </head>
+
+  <body data-sveltekit-preload-data="hover">
+    <div style="display: contents">%sveltekit.body%</div>
+  </body>
 </html>

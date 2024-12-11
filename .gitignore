@@ -1,22 +1,12 @@
+# Basic
 node_modules
+.git
 
 # Output
 .output
 .vercel
-.netlify
-.wrangler
-/.svelte-kit
-/build
-
-# OS
-.DS_Store
-Thumbs.db
-
-# Env
-.env
-.env.*
-!.env.example
-!.env.test
+.svelte-kit
+build
 
 # Vite
 vite.config.js.timestamp-*
