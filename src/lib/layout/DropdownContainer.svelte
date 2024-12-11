@@ -11,7 +11,7 @@
 </script>
 
 <div
-  class="origin-top-right z-40 absolute {position} mt-2 {height} {width} rounded-md bg-mono-background border border-mono-divider overflow-auto"
+  class="origin-top-right z-40 absolute {position} mt-2 {height} {width} bg-mono-background border border-mono-divider overflow-auto"
   role="menu"
   aria-orientation="vertical"
   aria-labelledby="{id}-button"

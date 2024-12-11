@@ -13,7 +13,7 @@
 </script>
 
 <input
-  class={`text-type-primary block py-1 bg-mono-accentLight1 rounded-sm text-center caret-type-primary outline-none ${className}`}
+  class={`text-type-primary block py-1 bg-mono-accentLight1 text-center caret-type-primary outline-none ${className}`}
   {placeholder}
   {value}
   oninput={(event) => dispatch("input", event)} />

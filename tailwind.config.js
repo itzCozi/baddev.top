@@ -28,7 +28,7 @@ module.exports = {
         type: {
           primary: "#c0c0c0",
           emphasized: "#e0e0e0",
-          dimmed: "#bdbdbd",
+          dimmed: "#cacaca",
           footer: "#505050",
         },
       },

@@ -29,7 +29,7 @@ body {
 
 ul li::before {
   content: "*";
-  color: #bdbdbd; /* Dimmed */
+  color: #cacaca; /* Dimmed */
 }
 
 a {
