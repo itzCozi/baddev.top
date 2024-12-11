@@ -1,7 +1,6 @@
 <script lang="ts">
   import Divider from "$lib/type/Divider.svelte";
   import ListItem from "$lib/layout/ListItem.svelte";
-  import Paragraph from "$lib/type/Paragraph.svelte";
   import PageLayout from "$lib/layout/PageLayout.svelte";
   import Button from "$lib/buttons/Button.svelte";
 </script>
@@ -94,10 +93,6 @@
       href="https://www.youtube.com/@davidloehlein"
       text="David Löhlein" />
   </ul>
-  <Paragraph>
-    365 Radio is a collection of "radio stations" that stream and post mostly on YouTube. These
-    channels mostly consist of DJ sets and other related content.
-  </Paragraph>
   <Divider />
   <div class="flex items-center justify-center">
     <Button
