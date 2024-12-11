@@ -18,6 +18,7 @@
 
 html,
 body {
+  cursor: default;
   background-color: #000000;
   color: #d0d0d0;
   font-family: "Inconsolata";
