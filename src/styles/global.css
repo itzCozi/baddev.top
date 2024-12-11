@@ -11,6 +11,11 @@
   cursor: pointer;
 }
 
+::selection {
+  color: #000000;
+  background-color: #c0c0c0;
+}
+
 html,
 body {
   background-color: #000000;
@@ -24,13 +29,15 @@ body {
 
 ul li::before {
   content: "*";
-  color: #bbbbbb; /* Dimmed */
+  color: #bdbdbd; /* Dimmed */
 }
 
 a {
   color: #4286e0;
   text-decoration: none;
-  transition: background-color 200ms, color 200ms;
+  transition:
+    background-color 200ms,
+    color 200ms;
 }
 
 a:hover {

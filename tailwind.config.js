@@ -26,11 +26,10 @@ module.exports = {
           accentLight2: "#3a3a3a",
         },
         type: {
-          primary: "#d0d0d0",
+          primary: "#c0c0c0",
           emphasized: "#e0e0e0",
-          dimmed: "#bbbbbb",
+          dimmed: "#bdbdbd",
           footer: "#505050",
-          dark: "#0a0a0a",
         },
       },
     },

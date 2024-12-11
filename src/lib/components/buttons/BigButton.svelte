@@ -12,14 +12,14 @@
 
 {#if href}
   <a
-    class={`hover:no-underline text-center text-type-dimmed/90 border w-full text-center border-mono-divider rounded py-1 px-2 hover:bg-transparent hover:text-type-primary hover:border-type-footer duration-200 ease-in-out ${className}`}
+    class={`hover:no-underline text-center text-type-dimmed/90 border w-full border-mono-divider rounded py-1 px-2 hover:bg-transparent hover:text-type-primary hover:border-type-footer duration-200 ease-in-out ${className}`}
     {href}
     {title}>
     {@render children?.()}
   </a>
 {:else}
   <button
-    class={`text-center text-type-dimmed/90 border w-full text-center border-mono-divider rounded py-1 px-2 hover:text-type-primary hover:border-type-footer duration-200 ease-in-out ${className}`}
+    class={`text-center text-type-dimmed/90 border w-full border-mono-divider rounded py-1 px-2 hover:text-type-primary hover:border-type-footer duration-200 ease-in-out ${className}`}
     onclick={onClick}
     {title}>
     {@render children?.()}
