@@ -7,7 +7,8 @@
 </script>
 
 <PageLayout>
-  <h2 class="text-3xl text-type-emphasized flex gap-3 text-center items-center justify-center">
+  <h2
+    class="text-3xl text-type-emphasized flex gap-3 text-center items-center justify-center font-semibold">
     About 365
   </h2>
   <Paragraph className="mt-3 mb-1">

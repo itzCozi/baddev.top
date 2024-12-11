@@ -7,7 +7,8 @@
 </script>
 
 <PageLayout>
-  <h3 class="text-3xl text-type-emphasized mb-3 flex gap-3 text-center items-center justify-center">
+  <h3
+    class="text-3xl text-type-emphasized mb-3 flex gap-3 text-center items-center justify-center font-semibold">
     <img
       src="/icon.png"
       alt="Icon"

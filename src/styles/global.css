@@ -26,6 +26,10 @@ ul li::before {
   content: "* ";
   color: #bbbbbb; /* Dimmed */
 }
+li a {
+  display: inline-block;
+  width: 94.8%;
+}
 
 a {
   color: #4286e0;
@@ -33,5 +37,6 @@ a {
 }
 
 a:hover {
-  text-decoration: underline;
+  background-color: #4286e0;
+  color: #000000;
 }
