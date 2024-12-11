@@ -5,22 +5,18 @@
 :root ::-webkit-scrollbar {
   width: 8px;
   background-color: transparent;
-  border-left: #202020 solid 0.5px;
 }
 :root ::-webkit-scrollbar-thumb {
   background-color: #252525;
   cursor: pointer;
 }
 
-:root {
-  --background-color: #121212;
-}
-
 html,
 body {
-  background-color: var(--background-color);
+  background-color: #000000;
   color: #d0d0d0;
   font-family: "Inconsolata";
+  font-size: 1.03rem;
   margin: 0;
   padding: 0;
   caret-color: #e0e0e0;
@@ -28,11 +24,11 @@ body {
 
 ul li::before {
   content: "* ";
-  color: #a3a3a3; /* Dimmed */
+  color: #bbbbbb; /* Dimmed */
 }
 
 a {
-  color: #4493f8;
+  color: #4286e0;
   text-decoration: none;
 }
 

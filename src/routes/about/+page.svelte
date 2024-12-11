@@ -1,5 +1,6 @@
 <script lang="ts">
-  import BorderButton from "$lib/components/buttons/BorderButton.svelte";
+  import BigButton from "$lib/components/buttons/Button.svelte";
+  import Button from "$lib/components/buttons/Button.svelte";
   import PageLayout from "$lib/components/layout/PageLayout.svelte";
   import Paragraph from "$lib/components/type/Paragraph.svelte";
   import Divider from "$lib/components/type/Divider.svelte";
@@ -16,19 +17,23 @@
     promoters/radio stations are included in this list. We love feedback, so if you have any
     suggestions, please let us know.
   </Paragraph>
-  <BorderButton
+  <BigButton
     title="Email"
     onClick={() => window.open("mailto:dev@wyzie.ru")}
-    className="w-full py-2 rounded-md">
+    className="w-full py-2">
     Email Us
-  </BorderButton>
+  </BigButton>
   <Divider />
   <div class="flex justify-between items-center">
-    <a
-      href="/"
-      title="Home">Home</a>
-    <a
-      href="https://github.com/itzcozi/365"
-      title="Source code">Source code</a>
+    <Button
+      title="Home"
+      href="/">
+      Home
+    </Button>
+    <Button
+      title="Source code"
+      href="https://github.com/itzcozi/365">
+      Source code
+    </Button>
   </div>
 </PageLayout>

@@ -16,7 +16,7 @@ module.exports = {
         mono: {
           background: "#121212",
           lightBackground: "#ffffff",
-          card: "#202020",
+          card: "#000000",
           accent: "#1a1a1a",
           divider: "#333333",
           blueAccent: "#2e6aac",
@@ -28,7 +28,7 @@ module.exports = {
         type: {
           primary: "#d0d0d0",
           emphasized: "#e0e0e0",
-          dimmed: "#a3a3a3",
+          dimmed: "#bbbbbb",
           footer: "#505050",
           dark: "#0a0a0a",
         },
