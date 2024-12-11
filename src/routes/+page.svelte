@@ -1,5 +1,6 @@
 <script lang="ts">
   import Divider from "$lib/components/type/Divider.svelte";
+  import ListItem from "$lib/components/layout/ListItem.svelte";
 </script>
 
 <div class="flex items-center justify-center min-h-screen p-6">
@@ -12,84 +13,84 @@
         class="h-14 w-auto" /> Radio
     </h3>
     <ul>
-      <li>
-        <a href="https://www.youtube.com/@hoer.berlin">Hoer Berlin</a>
-      </li>
-      <li>
-        <a href="https://www.youtube.com/@yoyakurecordstore">Yoyaku Record Store</a>
-      </li>
-      <li>
-        <a href="https://www.youtube.com/@BEATTVOfficial">BE-AT.tv</a>
-      </li>
-      <li>
-        <a href="https://www.youtube.com/@lethimcookradio">Let Him Cook Radio</a>
-      </li>
-      <li>
-        <a href="https://www.youtube.com/@bookclubradio">Book Club Radio</a>
-      </li>
-      <li>
-        <a href="https://www.youtube.com/@stoorlab">STOOR</a>
-      </li>
-      <li>
-        <a href="https://www.youtube.com/@Cercle">Cercle</a>
-      </li>
-      <li>
-        <a href="https://www.youtube.com/@MISSIONLONDON_">MISSION LONDON</a>
-      </li>
-      <li>
-        <a href="https://www.youtube.com/@Mixmag">Mixmag</a>
-      </li>
-      <li>
-        <a href="https://www.youtube.com/@soireeelive">soirée live</a>
-      </li>
-      <li>
-        <a href="https://www.youtube.com/@blackhouseradio">Black House Radio</a>
-      </li>
-      <li>
-        <a href="https://www.youtube.com/@clockfactorybristol">Clock Factory</a>
-      </li>
-      <li>
-        <a href="https://www.youtube.com/@radioradiofm">RRFM</a>
-      </li>
-      <li>
-        <a href="https://www.youtube.com/@DJsounds">DJsounds</a>
-      </li>
-      <li>
-        <a href="https://www.youtube.com/@FutureIntel">Future Intel</a>
-      </li>
-      <li>
-        <a href="https://www.youtube.com/@timelessmusicofc">Time:Code</a>
-      </li>
-      <li>
-        <a href="https://www.youtube.com/@KioskRadio">Kiosk Radio</a>
-      </li>
-      <li>
-        <a href="https://www.youtube.com/@RadioRea">Radio Rea</a>
-      </li>
-      <li>
-        <a href="https://www.youtube.com/@TheLotRadio">The Lot Radio</a>
-      </li>
-      <li>
-        <a href="https://www.youtube.com/@KINDREDEVERYTHING">KINDRED</a>
-      </li>
-      <li>
-        <a href="https://www.youtube.com/@KeepHush">Keep Hush</a>
-      </li>
-      <li>
-        <a href="https://www.youtube.com/@detroitclassicgallery7108">Detroit Classic Gallery</a>
-      </li>
-      <li>
-        <a href="https://www.youtube.com/@CollectRadio">Collect Radio</a>
-      </li>
-      <li>
-        <a href="https://www.youtube.com/@hardwax_official">Hardwax</a>
-      </li>
-      <li>
-        <a href="https://www.youtube.com/@RAWCUTSTV">RAW CUTS</a>
-      </li>
-      <li>
-        <a href="https://www.youtube.com/@davidloehlein">David Löhlein</a>
-      </li>
+      <ListItem
+        href="https://www.youtube.com/@hoer.berlin"
+        text="Hoer Berlin" />
+      <ListItem
+        href="https://www.youtube.com/@yoyakurecordstore"
+        text="Yoyaku Record Store" />
+      <ListItem
+        href="https://www.youtube.com/@BEATTVOfficial"
+        text="BE-AT.tv" />
+      <ListItem
+        href="https://www.youtube.com/@lethimcookradio"
+        text="Let Him Cook Radio" />
+      <ListItem
+        href="https://www.youtube.com/@bookclubradio"
+        text="Book Club Radio" />
+      <ListItem
+        href="https://www.youtube.com/@stoorlab"
+        text="STOOR" />
+      <ListItem
+        href="https://www.youtube.com/@Cercle"
+        text="Cercle" />
+      <ListItem
+        href="https://www.youtube.com/@MISSIONLONDON_"
+        text="MISSION LONDON" />
+      <ListItem
+        href="https://www.youtube.com/@Mixmag"
+        text="Mixmag" />
+      <ListItem
+        href="https://www.youtube.com/@soireeelive"
+        text="soirée live" />
+      <ListItem
+        href="https://www.youtube.com/@blackhouseradio"
+        text="Black House Radio" />
+      <ListItem
+        href="https://www.youtube.com/@clockfactorybristol"
+        text="Clock Factory" />
+      <ListItem
+        href="https://www.youtube.com/@radioradiofm"
+        text="RRFM" />
+      <ListItem
+        href="https://www.youtube.com/@DJsounds"
+        text="DJsounds" />
+      <ListItem
+        href="https://www.youtube.com/@FutureIntel"
+        text="Future Intel" />
+      <ListItem
+        href="https://www.youtube.com/@timelessmusicofc"
+        text="Time:Code" />
+      <ListItem
+        href="https://www.youtube.com/@KioskRadio"
+        text="Kiosk Radio" />
+      <ListItem
+        href="https://www.youtube.com/@RadioRea"
+        text="Radio Rea" />
+      <ListItem
+        href="https://www.youtube.com/@TheLotRadio"
+        text="The Lot Radio" />
+      <ListItem
+        href="https://www.youtube.com/@KINDREDEVERYTHING"
+        text="KINDRED" />
+      <ListItem
+        href="https://www.youtube.com/@KeepHush"
+        text="Keep Hush" />
+      <ListItem
+        href="https://www.youtube.com/@detroitclassicgallery7108"
+        text="Detroit Classic Gallery" />
+      <ListItem
+        href="https://www.youtube.com/@CollectRadio"
+        text="Collect Radio" />
+      <ListItem
+        href="https://www.youtube.com/@hardwax_official"
+        text="Hardwax" />
+      <ListItem
+        href="https://www.youtube.com/@RAWCUTSTV"
+        text="RAW CUTS" />
+      <ListItem
+        href="https://www.youtube.com/@davidloehlein"
+        text="David Löhlein" />
     </ul>
     <p>
       365 Radio is a collection of "radio stations" that stream and post mostly on YouTube. These
