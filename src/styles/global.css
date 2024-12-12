@@ -33,15 +33,18 @@ ul li::before {
   color: #cacaca; /* Dimmed */
 }
 
-a {
-  color: #4286e0;
-  text-decoration: none;
+li a {
   transition:
     background-color 200ms,
     color 200ms;
 }
 
+a {
+  color: #4493f8;
+  text-decoration: none;
+}
+
 a:hover {
-  background-color: #4286e0;
+  background-color: #4493f8;
   color: #000000;
 }

@@ -3,16 +3,20 @@
   import ListItem from "$lib/layout/ListItem.svelte";
   import PageLayout from "$lib/layout/PageLayout.svelte";
   import Button from "$lib/buttons/Button.svelte";
+  import { goto } from "$app/navigation";
 </script>
 
 <PageLayout>
-  <h3
+  <h1
     class="text-3xl text-type-emphasized mb-3 flex gap-3 text-center items-center justify-center font-semibold">
-    <img
-      src="/icon.png"
-      alt="Icon"
-      class="h-14 w-auto" /> Radio
-  </h3>
+    <button on:click={() => goto("/")}>
+      <img
+        src="/icon.png"
+        loading="lazy"
+        alt="Icon"
+        class="h-14 w-auto hover:scale-105 duration-200 ease-in-out cursor-pointer" />
+    </button> Radio
+  </h1>
   <ul>
     <ListItem
       href="https://www.youtube.com/@hoer.berlin"
