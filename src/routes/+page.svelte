@@ -35,7 +35,7 @@
     </button>
   </span>
 
-  <div class="border border-mono-divider mb-4 p-2 h-[680px]">
+  <div class="border border-mono-divider mb-4 p-2 md:h-[680px]">
     {#if $activeTab === "radio"}
       <ul>
         <ListItem
