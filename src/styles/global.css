@@ -5,10 +5,12 @@
 :root ::-webkit-scrollbar {
   width: 8px;
   background-color: transparent;
+  border-left: #333333 solid 0.5px;
 }
 :root ::-webkit-scrollbar-thumb {
-  background-color: #252525;
+  background-color: transparent;
   cursor: pointer;
+  border-block: #333333 solid 0.5px;
 }
 
 ::selection {

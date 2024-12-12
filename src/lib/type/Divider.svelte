@@ -7,5 +7,5 @@
   let { className = "", children }: Props = $props();
 </script>
 
-<hr class={`border-b border-mono-divider my-2 border-0 ${className}`} />
+<hr class={`border-b border-mono-divider my-3 border-0 ${className}`} />
 {@render children?.()}

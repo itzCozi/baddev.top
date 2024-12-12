@@ -8,8 +8,7 @@
 </script>
 
 <PageLayout>
-  <h1
-    class="text-3xl text-type-emphasized flex gap-3 text-center items-center justify-center font-semibold">
+  <h1 class="text-3xl text-type-emphasized mb-4 flex gap-3 text-center items-center justify-center font-semibold">
     About
     <button on:click={() => goto("/")}>
       <img
@@ -19,12 +18,10 @@
         class="h-14 w-auto hover:scale-105 duration-200 ease-in-out cursor-pointer" />
     </button>
   </h1>
-  <Paragraph className="mt-3 mb-1">
-    365 Radio is a collection of "radio stations" that stream and post mostly on YouTube. These
-    channels mostly consist of DJ sets and other related content. Some of these have a strange
-    twist, like DJing in the back of a kitchen, in a bathroom, or in an elevator. Only the best
-    promoters/radio stations are included in this list. We love feedback, so if you have any
-    suggestions, please let us know.
+  <Paragraph className="mt-3 mb-2">
+    365 Radio is a collection of "radio stations" that stream and post mostly on YouTube. These channels mostly consist of DJ sets and other related content. Some of these have a strange twist, like
+    DJing in the back of a kitchen, in a bathroom, or in an elevator. Only the best promoters/radio stations are included in this list. We love feedback, so if you have any suggestions, please let us
+    know.
   </Paragraph>
   <BigButton
     title="Email"

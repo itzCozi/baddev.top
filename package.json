@@ -16,13 +16,13 @@
   },
   "devDependencies": {
     "@sveltejs/adapter-static": "^3.0.6",
-    "@sveltejs/kit": "^2.10.1",
+    "@sveltejs/kit": "^2.11.0",
     "@sveltejs/vite-plugin-svelte": "^5.0.2",
     "autoprefixer": "^10.4.20",
     "postcss": "^8.4.49",
     "prettier": "^3.4.2",
     "prettier-plugin-svelte": "^3.3.2",
-    "svelte": "^5.11.2",
+    "svelte": "^5.11.3",
     "svelte-check": "^4.1.1",
     "tailwindcss": "^3.4.16",
     "typescript": "^5.7.2",
@@ -32,32 +32,5 @@
     "cssnano": "^7.0.6",
     "lucide-svelte": "^0.447.0",
     "vite-plugin-compression": "^0.5.1"
-  },
-  "prettier": {
-    "trailingComma": "all",
-    "singleQuote": false,
-    "svelteStrictMode": true,
-    "svelteAllowShorthand": true,
-    "svelteIndentScriptAndStyle": true,
-    "embeddedLanguageFormatting": "auto",
-    "bracketSameLine": true,
-    "bracketSpacing": true,
-    "arrowParens": "always",
-    "jsxSingleQuote": false,
-    "svelteSortOrder": "options-scripts-styles-markup",
-    "quoteProps": "as-needed",
-    "proseWrap": "always",
-    "useTabs": false,
-    "printWidth": 100,
-    "tabWidth": 2,
-    "singleAttributePerLine": true,
-    "semi": true,
-    "endOfLine": "lf",
-    "experimentalTernaries": true,
-    "htmlWhitespaceSensitivity": "css",
-    "filepath": "{src/**/*.{ts,js,svelte,html,css},*.{ts,js,svelte,html,css,json,md,xml}}",
-    "plugins": [
-      "prettier-plugin-svelte"
-    ]
   }
 }
