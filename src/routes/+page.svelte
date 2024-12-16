@@ -1,5 +1,4 @@
 <script lang="ts">
-  import Divider from "$lib/type/Divider.svelte";
   import ListItem from "$lib/layout/ListItem.svelte";
   import PageLayout from "$lib/layout/PageLayout.svelte";
   import Button from "$lib/buttons/Button.svelte";
