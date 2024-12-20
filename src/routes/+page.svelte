@@ -1,22 +1,25 @@
 <script lang="ts">
-  import ListItem from "$lib/layout/ListItem.svelte";
   import PageLayout from "$lib/layout/PageLayout.svelte";
+  import ListItem from "$lib/layout/ListItem.svelte";
   import Button from "$lib/buttons/Button.svelte";
-  import { goto } from "$app/navigation";
   import { writable } from "svelte/store";
+  import { goto } from "$app/navigation";
 
   const activeTab = writable("radio");
 </script>
 
 <PageLayout>
   <h1 class="text-3xl text-type-emphasized mb-4 flex gap-3 text-center items-center justify-center font-semibold">
-    <button on:click={() => goto("/")}>
+    <a
+      href="/"
+      title="Home"
+      class="hover:bg-transparent">
       <img
         src="/icon.png"
         loading="lazy"
         alt="Icon"
         class="h-14 w-auto hover:scale-105 duration-200 ease-in-out cursor-pointer" />
-    </button> Radio
+    </a> Radio
   </h1>
 
   <!-- Jerry rigged so the height stays constant during tab switches  -->
@@ -34,7 +37,7 @@
     </button>
   </span>
 
-  <div class="border border-mono-divider mb-4 p-2 md:h-[680px]">
+  <div class="border border-mono-divider mb-4 p-2 md:h-[705px]">
     {#if $activeTab === "radio"}
       <ul>
         <ListItem
@@ -64,6 +67,9 @@
         <ListItem
           href="https://www.youtube.com/@Mixmag"
           text="Mixmag" />
+        <ListItem
+          href="https://www.youtube.com/@boilerroom"
+          text="Boiler Room" />
         <ListItem
           href="https://www.youtube.com/@soireeelive"
           text="soirée live" />
@@ -133,17 +139,26 @@
           href="https://www.youtube.com/@ColinBenders"
           text="Colin Benders" />
         <ListItem
+          href="https://www.youtube.com/@Linex-PanicRoom"
+          text="Linex Panic Room" />
+        <ListItem
           href="https://www.youtube.com/@chrisluno"
           text="Chris Luno" />
         <ListItem
           href="https://www.youtube.com/@BLONDISH"
           text="BLOND:ISH" />
         <ListItem
+          href="https://www.youtube.com/@jorisvoorndj"
+          text="Joris Voorn" />
+        <ListItem
           href="https://www.youtube.com/@guidlle"
           text="guidlle" />
         <ListItem
           href="https://www.youtube.com/@Stlndrms"
           text="STLNDRMS" />
+        <ListItem
+          href="https://www.youtube.com/@JayHosking"
+          text="Jay Hosking" />
       </ul>
     {/if}
   </div>
