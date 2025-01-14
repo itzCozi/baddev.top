@@ -3,7 +3,7 @@
   import ListItem from "$lib/layout/ListItem.svelte";
   import Button from "$lib/buttons/Button.svelte";
   import { writable } from "svelte/store";
-  import { goto } from "$app/navigation";
+  import { text } from "@sveltejs/kit";
 
   const activeTab = writable("radio");
 </script>
@@ -37,7 +37,7 @@
     </button>
   </span>
 
-  <div class="border border-mono-divider mb-4 p-2 md:h-[705px]">
+  <div class="border border-mono-divider mb-4 p-2 md:h-[730px]">
     {#if $activeTab === "radio"}
       <ul>
         <ListItem
@@ -46,6 +46,9 @@
         <ListItem
           href="https://www.youtube.com/@yoyakurecordstore"
           text="Yoyaku Record Store" />
+        <ListItem
+          href="https://www.youtube.com/@ElevatorMusicLive"
+          text="Elevator Music" />
         <ListItem
           href="https://www.youtube.com/@BEATTVOfficial"
           text="BE-AT.tv" />
@@ -135,6 +138,18 @@
         <ListItem
           href="https://www.youtube.com/@youna_kr"
           text="YOUNA" />
+        <ListItem
+          href="https://www.youtube.com/@takuhxmusic1"
+          text="Takuya Nakamura" />
+        <ListItem
+          href="https://www.youtube.com/@AmelieLens"
+          text="Amelie Lens" />
+        <ListItem
+          href="https://www.youtube.com/@mriya-music"
+          text="Mriya" />
+        <ListItem
+          href="https://www.youtube.com/@Mojaxx"
+          text="Mojaxx" />
         <ListItem
           href="https://www.youtube.com/@ColinBenders"
           text="Colin Benders" />
