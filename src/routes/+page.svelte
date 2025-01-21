@@ -172,6 +172,9 @@
           href="https://www.youtube.com/@Stlndrms"
           text="STLNDRMS" />
         <ListItem
+          href="https://www.youtube.com/@stateazure"
+          text="State Azure" />
+        <ListItem
           href="https://www.youtube.com/@JayHosking"
           text="Jay Hosking" />
       </ul>
