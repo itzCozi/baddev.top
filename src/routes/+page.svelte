@@ -133,8 +133,8 @@
     {#if $activeTab === "artists"}
       <ul>
         <ListItem
-          href="https://soundcloud.com/jj-darragh"
-          text="JJ Darragh" />
+          href="https://soundcloud.com/manjar-o"
+          text="[ManJar-O]" />
         <ListItem
           href="https://www.youtube.com/@davidloehlein"
           text="David Löhlein" />
