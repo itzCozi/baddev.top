@@ -7,8 +7,8 @@
   }
 
   let { children }: Props = $props();
-  const store = writable(".");
-  const countryStore = writable(".");
+  const store = writable("");
+  const countryStore = writable("");
   const imageLoaded = writable(false);
 
   let dotCount = 1;
@@ -16,13 +16,20 @@
     store.set(".".repeat(dotCount));
     countryStore.set(".".repeat(dotCount));
     dotCount = (dotCount % 4) + 1;
-  }, 100);
+  }, 75);
+
+  const timeout = setTimeout(() => {
+    clearInterval(interval);
+    store.set("Error");
+    countryStore.set("Error");
+  }, 10000); // 10 seconds timeout
 
   onMount(() => {
     fetch("https://api64.ipify.org?format=json")
       .then((res) => res.json())
       .then((data) => {
         clearInterval(interval);
+        clearTimeout(timeout);
         const ip = data.ip;
         return fetch(`https://ipapi.co/${ip}/json/`);
       })
@@ -32,6 +39,13 @@
         store.set(data.ip);
         countryStore.set(country);
         imageLoaded.set(true);
+      })
+      .catch((error) => {
+        console.error("Error fetching IP or country data:", error);
+        clearInterval(interval);
+        clearTimeout(timeout);
+        store.set("Unknown");
+        countryStore.set("Unknown");
       });
   });
 </script>

@@ -1,8 +1,7 @@
 <script lang="ts">
   import PageLayout from "$lib/layout/PageLayout.svelte";
   import ListItem from "$lib/layout/ListItem.svelte";
-  import Button from "$lib/buttons/Button.svelte";
-  import { writable } from "svelte/store";
+  import AccentButton from "$lib/buttons/AccentButton.svelte";
 </script>
 
 <PageLayout>
@@ -41,11 +40,11 @@
   </div>
 
   <div class="flex justify-between items-center">
-    <Button
+    <AccentButton
       title="Github"
-      href="https://github.com/itzCozi">Github</Button>
-    <Button
+      href="https://github.com/itzCozi">Github</AccentButton>
+    <AccentButton
       title="Discord"
-      href="https://discord.com/invite/mxhcENzG2j">Discord</Button>
+      href="https://discord.com/invite/mxhcENzG2j">Discord</AccentButton>
   </div>
 </PageLayout>
