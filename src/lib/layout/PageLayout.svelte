@@ -1,5 +1,7 @@
 <script lang="ts">
   import { writable } from "svelte/store";
+  import { onMount } from "svelte";
+
   interface Props {
     children?: import("svelte").Snippet;
   }
@@ -13,29 +15,29 @@
   const interval = setInterval(() => {
     store.set(".".repeat(dotCount));
     countryStore.set(".".repeat(dotCount));
-    dotCount = (dotCount % 3) + 1;
-  }, 500);
+    dotCount = (dotCount % 4) + 1;
+  }, 100);
 
-  fetch("https://api64.ipify.org?format=json")
-    .then((res) => res.json())
-    .then((data) => {
-      clearInterval(interval);
-      const ip = data.ip;
-      return fetch(`https://ipapi.co/${ip}/json/`);
-    })
-    .then((res) => res.json())
-    .then((data) => {
-      const country = data.country_code;
-      store.set(data.ip);
-      countryStore.set(country);
-      setTimeout(() => {
+  onMount(() => {
+    fetch("https://api64.ipify.org?format=json")
+      .then((res) => res.json())
+      .then((data) => {
+        clearInterval(interval);
+        const ip = data.ip;
+        return fetch(`https://ipapi.co/${ip}/json/`);
+      })
+      .then((res) => res.json())
+      .then((data) => {
+        const country = data.country_code;
+        store.set(data.ip);
+        countryStore.set(country);
         imageLoaded.set(true);
-      }, 1000); // Delay of 1 second
-    });
+      });
+  });
 </script>
 
 <div class="flex flex-col justify-center p-4 min-h-screen relative">
-  <div class="mx-auto w-[25rem] h-full border border-mono-divider p-4">
+  <div class="mx-auto w-[23rem] h-full border border-mono-divider p-4">
     {@render children?.()}
   </div>
   <p class="text-sm absolute bottom-2 left-2">
