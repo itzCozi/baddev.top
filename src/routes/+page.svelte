@@ -18,20 +18,20 @@
   </p>
 
   <div class="border border-mono-divider mb-4 p-2">
-      <ul>
-        <ListItem
-          href="https://cozi.lol"
-          text="BadDeveloper (software)" />
-        <ListItem
-          href="https://manjar-o.cc"
-          text="[ManJar-O] DJ" />
-        <ListItem
-          href="https://wyzie.ru"
-          text="The Wyzie Toolset" />
-        <ListItem
-          href="https://github.com/sussy-code"
-          text="Dev of sudo-flix" />
-      </ul>
+    <ul>
+      <ListItem
+        href="https://cozi.lol"
+        text="BadDeveloper (software)" />
+      <ListItem
+        href="https://manjar-o.cc"
+        text="[ManJar-O] DJ" />
+      <ListItem
+        href="https://wyzie.ru"
+        text="The Wyzie Toolset" />
+      <ListItem
+        href="https://github.com/sussy-code"
+        text="Dev of sudo-flix" />
+    </ul>
   </div>
 
   <div class="flex justify-between items-center">
