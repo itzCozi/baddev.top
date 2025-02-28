@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { writable } from "svelte/store";
+  import { writable, derived } from "svelte/store";
   import { onMount } from "svelte";
 
   interface Props {
@@ -9,14 +9,17 @@
   let { children }: Props = $props();
   const store = writable("");
   const countryStore = writable("");
-  const imageLoaded = writable(false);
+
+  const truncatedStore = derived(store, ($store) => {
+    return $store.length > 18 ? $store.slice(0, 18) + "..." : $store;
+  });
 
   let dotCount = 1;
   const interval = setInterval(() => {
     store.set(".".repeat(dotCount));
     countryStore.set(".".repeat(dotCount));
     dotCount = (dotCount % 4) + 1;
-  }, 75);
+  }, 100);
 
   const timeout = setTimeout(() => {
     clearInterval(interval);
@@ -38,7 +41,6 @@
         const country = data.country_code;
         store.set(data.ip);
         countryStore.set(country);
-        imageLoaded.set(true);
       })
       .catch((error) => {
         console.error("Error fetching IP or country data:", error);
@@ -55,13 +57,15 @@
     {@render children?.()}
   </div>
   <p class="text-sm absolute bottom-2 left-2">
-    Accessed by <span class="font-semibold">{$store}</span>
-    {#if $countryStore && $imageLoaded}
+    Accessed by <span
+      class="font-semibold"
+      title={$store}>{$truncatedStore}</span>
+    {#if $countryStore}
       from
       <img
         src={`https://flagsapi.com/${$countryStore}/flat/24.png`}
         alt="Country Flag"
-        class="inline-block ml-1" />
+        class="inline-block" />
     {/if}
   </p>
 </div>
