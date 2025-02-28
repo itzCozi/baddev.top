@@ -14,7 +14,13 @@
   </h1>
 
   <p class="text-sm mb-2">
-    Currently using <span class="font-semibold">NeverLose</span> in <span class="font-semibold">CS2</span> for HvH.
+    Currently using <a
+      class="font-semibold hover:bg-transparent hover:text-type-primary text-type-primary"
+      href="https://neverlose.cc">NeverLose</a>
+    in
+    <a
+      class="font-semibold hover:bg-transparent hover:text-type-primary text-type-primary"
+      href="https://www.counter-strike.net/cs2">CS2</a> for HvH.
   </p>
 
   <div class="border border-mono-divider mb-4 p-2">
