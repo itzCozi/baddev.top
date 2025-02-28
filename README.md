@@ -1,3 +1,3 @@
-# 365 Radio
+# No name HvH
 
-Cultured music with a great simple UI for anyone to take.
+IDK jus a site i made wit svelte

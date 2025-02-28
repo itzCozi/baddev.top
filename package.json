@@ -1,10 +1,10 @@
 {
-  "name": "365 Radio",
-  "short_name": "365",
+  "name": "BadDev",
+  "short_name": "BadDev",
   "type": "module",
   "repository": {
     "type": "git",
-    "url": "https://github.com/itzcozi/365"
+    "url": "https://github.com/itzcozi/baddev.top"
   },
   "scripts": {
     "dev": "vite dev",
